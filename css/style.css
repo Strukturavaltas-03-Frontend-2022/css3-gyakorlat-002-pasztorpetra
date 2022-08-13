@@ -85,7 +85,7 @@ body
 }
 
 /* 8: azok a span elemek, amelyek menu__hamburger osztályú elemen belül vannak */
-
+.menu__hamburger span
 {
   display: block;
   position: absolute;
@@ -98,7 +98,7 @@ body
 
 /* 9: a menu__hamburger osztályú elemeken belül lévő span elemek 
 before vagy after pszeudo-elemei */
-__selector__
+.menu__hamburger span ::after, .menu__hamburger span ::before
 {
   position: absolute;
   display: block;
@@ -111,27 +111,27 @@ __selector__
 
 /* 10: a menu__hamburger osztályú elemeken belül lévő span elemek 
 before pszeudo-elemei */
-__selector__
+.menu__hamburger span ::before
 {
   top: -15px;
 }
 
 /* 11: a menu__hamburger osztályú elemeken belül lévő span elemek
  after pszeudo-elemei */
-__selector__
+ .menu__hamburger span ::after
 {
   bottom: -15px;
 }
 
 /* 12: a menu__hamburger--htx osztályú elemeken belül lévő span elemek */
-__selector__
+.menu__hamburger--htx span
 {
   transition: background 0s 0.3s;
 }
 
 /* 13: a menu__hamburger--htx osztályú elemeken belül lévő span elemek 
 before vagy after pszeudo-elemei */
-__selector__
+.menu__hamburger--htx span ::after, .menu__hamburger--htx span ::before
 {
   transition-duration: 0.3s, 0.3s;
   transition-delay: 0.3s, 0s;
@@ -139,21 +139,21 @@ __selector__
 
 /* 14: a menu__hamburger--htx osztályú elemeken belül lévő span elemek 
 before pszeudo-elemei */
-__selector__
+.menu__hamburger--htx span ::before
 {
   transition-property: top, transform;
 }
 
 /* 15: a menu__hamburger--htx osztályú elemeken belül lévő span elemek 
 after pszeudo-elemei */
-__selector__
+.menu__hamburger--htx span ::after
 {
   transition-property: bottom, transform;
 }
 
 /* 16: a menu__hamburger--htx és az is-active osztályhoz egyszerre tartozó
  elemeken belül lévő span elemek */
-__selector__
+
 {
   background: none;
 }
@@ -168,7 +168,7 @@ __selector__
 
 /* 18: a menu__hamburger--htx és az is-active osztályhoz egyszerre tartozó
  elemeken belül lévő span elemek after pszeudo-elemei */
-__selector__
+
 {
   bottom: 0;
   transform: rotate(-45deg);
@@ -176,7 +176,7 @@ __selector__
 
 /* 19: a menu__hamburger--htx és az is-active osztályhoz egyszerre tartozó
  elemeken belül lévő span elemek before vagy after pszeudo-elemei */
-__selector__
+_
 {
   transition-delay: 0s, 0.3s;
 }
